@@ -1,0 +1,14 @@
+{
+  "name": "widgetomo",
+  "version": "1.0.0",
+  "description": "widget with tomo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "K Miyano",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.8.6"
+  }
+}

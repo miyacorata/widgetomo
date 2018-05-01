@@ -1,0 +1,62 @@
+/* CSSはここを読めばわかる => https://developer.mozilla.org/ja/docs/Web/CSS/Reference */
+
+*{
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    font-family: 'Segoe UI', 'VL PGothic', 'Meiryo', sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+p{
+    margin: 0;
+}
+
+#main{
+    position: absolute;
+    -webkit-app-region: drag;
+    width: 328px;
+    height: 100px;
+    bottom: 0;
+    padding: 0 13px;
+    background: rgba(18, 149, 255, 0.5);
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+#tomo{
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    max-height: 195px;
+    height: auto;
+    width: auto;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+    z-index: 2;
+}
+#time{
+    font-size: 20px;
+}
+#wbox{
+    position: relative;
+    z-index: 10;
+}
+#weather{
+    font-size: 30px;
+}
+#temp{
+    font-size: 25px;
+}
+#temp::before{
+    content: " - ";
+}
+#temp::after{
+    content: "℃";
+    font-size: 20px;
+}
